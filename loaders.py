@@ -41,8 +41,7 @@ def tiny_imagenet_corrupted_loader(
     """
     
     assert 1 <= severity <= 5, "Severity must be between 1 and 5"
-    assert corruption in ["gaussian_noise", "shot_noise", "impulse_noise"]
-
+    
     corruption_path = os.path.join(root, corruption, str(severity))
 
     # Transform the data (resize, normalize)
