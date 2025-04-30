@@ -23,5 +23,9 @@ The training dataset used for both models is Tiny ImageNet-200. Tiny ImageNet is
 
 The dataset we will test the models on is the ImageNet-C dataset introduced in [Benchmarking Neural Network Robustness to Common Corruptions and Perturbations](https://arxiv.org/abs/1903.12261) (ICRL 2019). This dataset consists of a number of images from the test set of ImageNet-200 with pertubations such as Gaussian noise, snow, jpeg compression, and motion blur applied. The images are 64x64 and are of 200 different categories, and there are 50 samples per category per transformation for a total of 10k test images for each pertubation. The dataset can be downloaded [here](https://zenodo.org/records/2536630).
 
+## Credit
+
+All code defining the SWAG class for tracking second moments of model parameters comes from the GitHub for "A Simple Baseline for Bayesian Uncertainty in Deep Learning" (Maddox et al, 2019).
+
 
 
