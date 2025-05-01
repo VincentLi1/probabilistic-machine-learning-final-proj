@@ -15,6 +15,12 @@ conda env create -f environment.yml
 conda activate pml_env
 ```
 
+Since torch does not nicely integrate with anaconda, you will likely need to install torch via pip separately:
+
+```bash
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+```
+
 3. Download the [Tiny ImageNet](http://cs231n.stanford.edu/tiny-imagenet-200.zip) and [Tiny ImageNet-C](https://zenodo.org/records/2536630) datasets (described in detail below). Create a directory 'data' in the main directory and store the extracted datasets in this folder. These datasets are not included on GitHub due to size.
 
 ## Datasets

@@ -1,4 +1,4 @@
-name: pml_env
+name: pml_env_dist
 channels:
   - conda-forge
   - bioconda
