@@ -34,7 +34,6 @@ class TinyImageNetTrainDataset(Dataset):
         # Get the correspondence with the wid labels and those used for tiny imagenet
         label_map = map_strings_to_line_numbers("./data/tiny-imagenet-200/wnids.txt")
 
-        print("Folders:")
         for class_name in os.listdir(root_dir):
             # print(class_name)
             class_folder = os.path.join(root_dir, class_name, "images")
@@ -111,7 +110,6 @@ class TinyImageNetCorruptedDataset(Dataset):
         # Get the correspondence with the wid labels and those used for tiny imagenet
         label_map = map_strings_to_line_numbers("./data/tiny-imagenet-200/wnids.txt")
 
-        print("Folders:")
         for class_name in os.listdir(root_dir):
             class_folder = os.path.join(root_dir, class_name)
             if not os.path.isdir(class_folder):
